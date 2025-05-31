@@ -52,11 +52,11 @@ public class TemperatureProcessingController {
             return message;
         };
 
-        String exchange = FANOUT_EXCHANGE_NAME;
-        String routingKey = "";
-        Object payload = temperatureLogOutput;
-
-        rabbitTemplate.convertAndSend(exchange, routingKey, payload, messagePostProcessor);
+//        String exchange = FANOUT_EXCHANGE_NAME;
+//        String routingKey = "";
+//        Object payload = temperatureLogOutput;
+//
+//        rabbitTemplate.convertAndSend(exchange, routingKey, payload, messagePostProcessor);
     }
 
 }
